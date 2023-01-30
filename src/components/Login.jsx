@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AddPost from './AddPost';
 import Posts from './Posts';
 const BASE_URL = 'https://strangers-things.herokuapp.com/api/';
 const COHORT_NAME = '2209-FTB-ET-WEB-PT';
@@ -36,7 +37,7 @@ const Login = () => {
       console.log(data);
       setToken(data.token);
 
-      localStorage.getItem('token', data.token);
+      localStorage.setItem('token', data.token);
       console.log('token', data.token);
 
       console.log('welcome!');
@@ -73,6 +74,7 @@ const Login = () => {
     return (
       <div>
         <h1>You're Logged in!</h1>
+        <AddPost />
         <Posts />
       </div>
     );

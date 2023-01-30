@@ -69,7 +69,7 @@ const Signup = () => {
       </div>
     );
   } else if (token) {
-    return <h1>Thanks for signing up!</h1>;
+    return <h1>Thank you for signing up!</h1>;
   }
 };
 
