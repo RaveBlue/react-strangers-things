@@ -6,7 +6,7 @@ const SinglePost = () => {
       <h1>Single Post Details</h1>
 
       <button>
-        <Link to="/posts">back to post list</Link>
+        <Link to="/Posts">back to post list</Link>
       </button>
     </div>
   );
